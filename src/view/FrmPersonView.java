@@ -93,8 +93,18 @@ public class FrmPersonView extends javax.swing.JPanel {
 
     private void prepareView() {
         // PersonViewFactory factory=new SimplePersonViewFactory();
-        PersonViewFactory factory = new AdvancedPersonViewFactory();
-        panelPerson.add(factory.getPersonView());
+ //       PersonViewFactory factory = new AdvancedPersonViewFactory();
+ //       panelPerson.add(factory.getPersonView());
 
     }
+
+    public JPanel getPanelPerson() {
+        return panelPerson;
+    }
+
+    public void setPanelPerson(JPanel panelPerson) {
+        this.panelPerson = panelPerson;
+    }
+    
+    
 }
