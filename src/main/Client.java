@@ -36,12 +36,11 @@ public class Client {
 
     private void kreiraj() {
         JFrame main= new JFrame();        
-        FrmPersonView panel=new FrmPersonView();//personViewFactory.getPersonView();
+        FrmPersonView panel=new FrmPersonView();
         JPanel person=personViewFactory.getPersonView();       
         panel.getPanelPerson().add(person);
         main.add(panel);
         main.pack();
-        panel.setVisible(true);
         main.setVisible(true);
 
     }
